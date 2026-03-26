@@ -1,0 +1,116 @@
+/* -------- RESET -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------- HEADER FIXE -------- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f6d63;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -------- ESPACE SOUS LE HEADER -------- */
+main {
+    margin-top: 90px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* -------- FOOTER -------- */
+footer {
+    background: #177953;
+    color: #ecae01;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* -------- Calculatrice -------- */
+#calculator {
+    width: 260px;
+    margin: 20px auto;
+    background: #1f6d63;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d7d7d7;
+}
+
+.clear {
+    grid-column: span 4;
+    background: #ff5252;
+    color: white;
+}
+
+.clear:hover {
+    background: #ff2222;
+}
+

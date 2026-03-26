@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Facturation Ventes Mme Potier</title>
+<link rel="stylesheet" href="facturation.css">
+</head>
+
+<body>
+
+
+    <!-- ---------------- HEADER FIXE ---------------- -->
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">ACCUEIL</a></li>
+                <li><a href="calculatrice.html">CALCULATRICE</a></li>
+                <li><a href="convertisseur.html">CONVERTISSEUR DE DEVISE</a></li>
+                <li><a href="animations.html">ANIMATIONS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ************** COLONNE GAUCHE : ARTICLES ************** -->
+
+
+    <div class="articles">
+        <h2>Articles</h2>
+
+        <div class="item">
+            Cravate :
+            <br><br>
+            <input type="number" id="cravate" value="0" oninput="updateTotals()">
+        </div>
+
+        <div class="item">
+            Ceinture :
+            <br><br>
+            <input type="number" id="ceinture" value="0" oninput="updateTotals()">
+        </div>
+
+        <div class="item">
+            Casquette :
+            <br><br>
+            <input type="number" id="casquette" value="0" oninput="updateTotals()">
+        </div>
+
+        <div class="item">
+            Echarpe :
+            <br><br>
+            <input type="number" id="echarpe" value="0" oninput="updateTotals()">
+        </div>
+
+        <div class="item">
+            Foulard :
+            <br><br>
+            <input type="number" id="foulard" value="0" oninput="updateTotals()">
+        </div>
+
+        <button class="btn" onclick="genererFacture()">Générer Facture</button>
+    </div>
+
+
+    <!-- ************** COLONNE DROITE : FACTURE ************** -->
+
+
+    <div class="facture">
+        <h2>Facture</h2>
+
+        <br><br><br><br><br><br><br>
+
+        <div id="detail_facture"></div>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="result">
+            <p id="total_ht"></p>
+            <p id="tva"></p>
+            <p id="total_ttc"></p>
+        </div>
+    </div>
+
+
+<script src="facturation.js"></script>
+
+</body>
+</html>

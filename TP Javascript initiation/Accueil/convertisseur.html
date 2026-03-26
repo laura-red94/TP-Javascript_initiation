@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertisseur</title>
+    <link rel="stylesheet" href="convertisseur.css">
+</head>
+<body>
+
+    <!-- ---------------- HEADER FIXE ---------------- -->
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">ACCUEIL</a></li>
+                <li><a href="calculatrice.html">CALCULATRICE</a></li>
+                <li><a href="facturation.html">FACTURATION</a></li>
+                <li><a href="animations.html">ANIMATIONS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ------------- CONTENU PRINCIPAL ------------- -->
+
+
+    <main>
+        <h1>BIENVENUE <br> SUR MON <br> CONVERTISSEUR</h1>
+    </main>
+
+
+    <div class="converter">
+        <input type="number" id="amount1" placeholder="Montant">
+
+        <select id="currency1">
+            <option value="EUR">Euro</option>
+            <option value="USD">Dollar</option>
+            <option value="GBP">Livre sterling</option>
+            <option value="JPY">Yen</option>
+        </select>
+
+        <div class="swap" id="swap">↔</div>
+
+        <input type="number" id="amount2" placeholder="Montant" disabled>
+
+        <select id="currency2">
+            <option value="EUR">Euro</option>
+            <option value="USD">Dollar</option>
+            <option value="GBP">Livre sterling</option>
+            <option value="JPY">Yen</option>
+        </select>
+    </div>
+
+    <button id="convert">convertir</button>
+
+<script src="convertisseur.js"></script>
+
+</body>
+</html>

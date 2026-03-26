@@ -1,0 +1,90 @@
+body {
+    font-family: Georgia;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* -------- HEADER FIXE -------- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f6d63;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -------- ESPACE SOUS LE HEADER -------- */
+main {
+    margin-top: 90px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.articles, .facture {
+    margin-top: 30px;
+    width: 45%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #156060;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background: #d1d1d1;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: #1da199;
+    border: solid;
+    color: black;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #127a74;
+}
+
+.result {
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 5px;
+    text-transform: uppercase;
+}

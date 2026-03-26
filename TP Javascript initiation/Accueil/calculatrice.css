@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* -------- HEADER FIXE -------- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f6d63;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -------- ESPACE SOUS LE HEADER -------- */
+main {
+    margin-top: 90px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.calc {
+    width: 260px;
+    background: #ffffff;
+    padding: 15px;
+    margin: 0 auto;
+    color: #0d6969;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#display {
+    background: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: right;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.btn {
+    flex: 1;
+    margin: 4px;
+    padding: 15px;
+    background: #14b2b2;
+    font-size: 22px;
+    border: solid;
+    cursor: pointer;
+}
+
+.c {
+    background: #87c71f;
+
+
+}
+
+.equal {
+    background: #87c71f;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}

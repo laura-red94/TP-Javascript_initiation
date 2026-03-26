@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ---------------- HEADER FIXE ---------------- -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="calculatrice.html">CALCULATRICE</a></li>
+                <li><a href="convertisseur.html">CONVERTISSEUR DE DEVISE</a></li>
+                <li><a href="facturation.html">FACTURATION</a></li>
+                <li><a href="animations.html">ANIMATIONS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ------------- CONTENU PRINCIPAL ------------- -->
+    <main>
+        <h1>BIENVENUE <br> SUR MON <br> SITE</h1>
+    </main>
+
+    <!-- ------------------- FOOTER -------------------- -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2>Plan du Site</h2>
+                <p><a href="calculatrice.html">Calculatrice</a></p>
+                <p><a href="convertisseur.html">Convertisseur</a></p>
+                <p><a href="facturation.html">Facturation</a></p>
+                <p><a href="animations.html">Animation</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h2>RGPD</h2>
+                <p><a href="#">Mentions légales</a></p>
+                <p><a href="#">Politique de confidentialité</a></p>
+                <p><a href="#">CGU</a></p>
+                <p><a href="#">Politique des cookies</a></p>
+                <p><a href="#">Accessibilité</a></p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © LAURA REDOT <span id="year"></span>. Tous droits réservés.
+            <br><br>
+        </p>
+    </footer>
+
+    <script>
+        // Remplit automatiquement l'année en cours
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
